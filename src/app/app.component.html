@@ -1,16 +1,16 @@
 <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center" class="nav">
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <button mat-icon-button>
+    <button mat-icon-button matTooltip="Sidebar">
       <mat-icon>menu</mat-icon></button>
-    <a mat-icon-button>
+    <a mat-icon-button matTooltip="Dashboard" [routerLink]="['/dashboard']">
       <mat-icon>home</mat-icon></a>
     <span>Hotel Reservation</span>
   </div>
 
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-  <button type="button" mat-stroked-button (click)="showStatistics=!showStatistics" fxHide.lt-md="true">
+  <button type="button" mat-stroked-button (click)="showStatistics=!showStatistics" fxHide.lt-md="true" matTooltip="Click to expand" matTooltipClass="blue-back">
     <mat-icon>analytics</mat-icon>
     <span class="ml mr">Statistics</span>
     <mat-icon class="rotatable" [ngClass]="{'rotate-180':showStatistics}">keyboard_arrow_down</mat-icon>
@@ -19,9 +19,9 @@
 
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <button type="button" mat-stroked-button class="mr" fxHide.lt-md = "true" [mat-menu-trigger-for]="user">
+    <button type="button" mat-stroked-button class="mr" fxHide.lt-md = "true" [mat-menu-trigger-for]="user" matTooltip="User">
       <mat-icon>account_circle</mat-icon>User</button>
-    <button type="button" mat-icon-button [mat-menu-trigger-for]="notifications" class="ml mr">
+    <button type="button" mat-icon-button [mat-menu-trigger-for]="notifications" class="ml mr" matTooltip="notifications">
       <mat-icon matBadge="2" matBadgeColor="accent">notifications</mat-icon></button>
     <button type="button" mat-icon-button [mat-menu-trigger-for]="topmenu">
       <mat-icon>more_vert</mat-icon>

@@ -9,6 +9,8 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatBadgeModule} from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCommonModule } from '@angular/material/core';
+import { MatTooltipModule} from '@angular/material/tooltip';
 
 let matComponents = [
   MatButtonModule,
@@ -19,7 +21,8 @@ let matComponents = [
   MatMenuModule,
   MatExpansionModule,
   MatBadgeModule,
-  MatDividerModule
+  MatDividerModule,
+  MatTooltipModule
 
 ]
 @NgModule({
