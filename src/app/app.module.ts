@@ -8,6 +8,8 @@ import { MaterialModule } from './modules/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
