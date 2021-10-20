@@ -7,7 +7,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 
-
 let matComponents = [
   MatButtonModule,
   MatInputModule,
