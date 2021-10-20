@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatBadgeModule} from '@angular/material/badge';
+import { MatDividerModule } from '@angular/material/divider';
 
 let matComponents = [
   MatButtonModule,
@@ -15,7 +17,9 @@ let matComponents = [
   MatIconModule,
   FlexLayoutModule,
   MatMenuModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatBadgeModule,
+  MatDividerModule
 
 ]
 @NgModule({
