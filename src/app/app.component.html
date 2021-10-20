@@ -1,3 +1,31 @@
-<mat-toolbar color="primary ">
-  Hotel Reservation
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon></button>
+    <a mat-icon-button>
+      <mat-icon>home</mat-icon></a>
+    <span>Hotel Reservation</span>
+  </div>
+
+
+  <div>
+  <button type="button" mat-stroked-button (click)="showStatistics=!showStatistics">
+    <mat-icon>analytics</mat-icon>
+    <span class="ml mr">Statistics</span>
+    <mat-icon class="rotatable" [ngClass]="{'rotate-180':showStatistics}">keyboard_arrow_down</mat-icon>
+  </button>
+  </div>
+
+
+  <div>
+    <button type="button" mat-stroked-button="mr">
+      <mat-icon>account_circle</mat-icon>User</button>
+    <button type="button" mat-stroked-button>
+      <mat-icon>notifications</mat-icon></button>
+    <button type="button" mat-stroked-button>
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  </div>
+
 </mat-toolbar>
