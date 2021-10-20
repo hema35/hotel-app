@@ -10,10 +10,16 @@ import { HttpClientModule} from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule} from '@angular/flex-layout';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
+import { BookingsListComponent } from './components/bookings-list/bookings-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    BookingsComponent,
+    BookingsListComponent
   ],
   imports: [
     BrowserModule,

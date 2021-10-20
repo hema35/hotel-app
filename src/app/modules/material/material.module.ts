@@ -5,20 +5,26 @@ import { MatInputModule } from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatMenuModule } from '@angular/material/menu';
 
 
-let components = [
+let matComponents = [
   MatButtonModule,
   MatInputModule,
   MatToolbarModule,
   MatIconModule,
-  FlexLayoutModule
+  FlexLayoutModule,
+  MatMenuModule
 
 ]
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule
+    CommonModule,
+    matComponents
+  ],
+  exports: [
+    matComponents
   ]
 })
 export class MaterialModule { }

@@ -1,4 +1,4 @@
-<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center" class="nav">
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
     <button mat-icon-button>
@@ -19,13 +19,45 @@
 
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <button type="button" mat-stroked-button="mr" fxHide.lt-md = "true">
+    <button type="button" mat-stroked-button class="mr" fxHide.lt-md = "true" [mat-menu-trigger-for]="user">
       <mat-icon>account_circle</mat-icon>User</button>
-    <button type="button" mat-stroked-button>
+    <button type="button" mat-icon-button [mat-menu-trigger-for]="notifications">
       <mat-icon>notifications</mat-icon></button>
-    <button type="button" mat-stroked-button>
+    <button type="button" mat-icon-button [mat-menu-trigger-for]="topmenu">
       <mat-icon>more_vert</mat-icon>
     </button>
   </div>
+
+  <!-- menu starts -->
+  <mat-menu #topmenu="matMenu">
+    <a [routerLink]="['/dashboard']" mat-menu-item>Dashboard</a>
+    <button mat-menu-item [mat-menu-trigger-for]="bookings">Bookings</button>
+    <button mat-menu-item [mat-menu-trigger-for]="user">User</button>
+    <button mat-menu-item >Statistics</button>
+  </mat-menu>
+
+<mat-menu #bookings="matMenu">
+  <a [routerLink]="['/booking']">New Booking</a>
+  <a [routerLink]="['/bookings-list']">Bookings List</a>
+</mat-menu>
+
+<mat-menu #user="matMenu">
+  <button mat-menu-item>Profile</button>
+  <button mat-menu-item>Change Password</button>
+  <button mat-menu-item>Logout</button>
+  </mat-menu>
+
+  <mat-menu #notifications>
+    <button mat-menu-item>
+      <mat-icon>email</mat-icon>Email from John
+    </button>
+    <button mat-menu-item>
+      <mat-icon>receipt_long</mat-icon>Send Bills to Customers
+    </button>
+  </mat-menu>
+
+
+
+  <!-- menu ends -->
 
 </mat-toolbar>
