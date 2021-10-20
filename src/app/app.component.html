@@ -1,7 +1,7 @@
 <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center" class="nav">
 
   <div fxLayout="row" fxLayoutAlign="space-between center">
-    <button mat-icon-button matTooltip="Sidebar">
+    <button mat-icon-button matTooltip="Sidebar" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon></button>
     <a mat-icon-button matTooltip="Dashboard" [routerLink]="['/dashboard']">
       <mat-icon>home</mat-icon></a>
@@ -62,6 +62,7 @@
   <!-- menu ends -->
 
 </mat-toolbar>
+<!-- Expansion panel -->
 
 <mat-expansion-panel [expanded]="showStatistics" >
   <div class="mt" fxLayout="row" fxLayoutAlign="space-evenly center" fxLayoutGap="20px">
@@ -80,3 +81,16 @@
     </div>
   </div>
 </mat-expansion-panel>
+
+<!-- MatsideNav -->
+<mat-drawer-container class="drawer-container" >
+  <mat-drawer #drawer class="drawer" mode="side" opened="true">
+  <div class="user-logo">
+    <mat-icon class="user-icon">person_outline</mat-icon>
+    <div class="v-align-middle"></div>
+  </div>
+  <mat-divider></mat-divider>
+  </mat-drawer>
+  <div class="main"></div>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

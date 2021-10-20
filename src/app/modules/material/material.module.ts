@@ -11,6 +11,7 @@ import { MatBadgeModule} from '@angular/material/badge';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCommonModule } from '@angular/material/core';
 import { MatTooltipModule} from '@angular/material/tooltip';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 let matComponents = [
   MatButtonModule,
@@ -22,7 +23,8 @@ let matComponents = [
   MatExpansionModule,
   MatBadgeModule,
   MatDividerModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatSidenavModule
 
 ]
 @NgModule({
