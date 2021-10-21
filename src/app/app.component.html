@@ -85,7 +85,7 @@
 
 <!-- MatsideNav -->
 <mat-drawer-container class="drawer-container" >
-  <mat-drawer #drawer class="drawer" mode="over" opened="false">
+  <mat-drawer #drawer class="drawer" mode="side" opened="false">
   <div class="user-logo">
     <mat-icon class="user-icon">person_outline</mat-icon>
     <div class="v-align-middle"></div>
@@ -97,6 +97,9 @@
   <a [routerLink]="['/bookings']" mat-list-item routerLinkActive="link-active">New Booking</a>
   </mat-nav-list>
   </mat-drawer>
-  <div class="main"></div>
+
+  <div class="main">
   <router-outlet></router-outlet>
+</div>
+
 </mat-drawer-container>

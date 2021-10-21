@@ -13,6 +13,7 @@ import { MatCommonModule } from '@angular/material/core';
 import { MatTooltipModule} from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 let matComponents = [
   MatButtonModule,
@@ -26,7 +27,8 @@ let matComponents = [
   MatDividerModule,
   MatTooltipModule,
   MatSidenavModule,
-  MatListModule
+  MatListModule,
+  MatGridListModule
 
 ]
 @NgModule({
