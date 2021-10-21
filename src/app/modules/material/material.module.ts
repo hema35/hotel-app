@@ -12,6 +12,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatCommonModule } from '@angular/material/core';
 import { MatTooltipModule} from '@angular/material/tooltip';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 let matComponents = [
   MatButtonModule,
@@ -24,7 +25,8 @@ let matComponents = [
   MatBadgeModule,
   MatDividerModule,
   MatTooltipModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatListModule
 
 ]
 @NgModule({

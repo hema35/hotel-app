@@ -15,6 +15,8 @@ import { BookingsListComponent } from './components/bookings-list/bookings-list.
 import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatIconModule,
     FlexLayoutModule,
     MatMenuModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatRippleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
