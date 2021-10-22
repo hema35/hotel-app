@@ -7,16 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { FlexLayoutModule} from '@angular/flex-layout';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { BookingsListComponent } from './components/bookings-list/bookings-list.component';
-import { MatIcon, MatIconModule } from '@angular/material/icon';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [
@@ -29,17 +22,10 @@ import { MatRippleModule } from '@angular/material/core';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     FormsModule,
-    ReactiveFormsModule,
     HttpClientModule,
-    MatToolbarModule,
-    MatIconModule,
-    FlexLayoutModule,
-    MatMenuModule,
-    MatSidenavModule,
-    MatListModule,
-    MatRippleModule
+    MaterialModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

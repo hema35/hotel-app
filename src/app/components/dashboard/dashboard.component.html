@@ -1,53 +1,57 @@
-<mat-grid-list cols="4" gutterSize="20px" rowHeight="100px" class="dashbaord-grid-list">
-  <mat-grid-tile class="dashboard-tile dashboard-tile-1 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch" matRipple matTooltip="Total Booking">
-    <div fxFlex="1125%" fxLayout= "column" fxLayoutAlign="center center" class="h-100">
+<mat-grid-list [cols]="dashboardGridCols" gutterSize="20px" rowHeight="100px" class="dashbaord-grid-list">
+  <mat-grid-tile class="dashboard-tile dashboard-tile-1 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch"
+    matRipple matTooltip="Total Booking">
+    <div fxFlex="1 1 25%" fxLayout="column" fxLayoutAlign="center center" class="h-100">
       <mat-icon>description</mat-icon>
     </div>
-    <div fxFlex="1175%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
-    <div class="dashboard-tile-heading">
-    Total Bookings
-  </div >
-  <div class="dashboard-tile-sub-heading">{{8450|number}}</div>
-</div>
+    <div fxFlex="1 1 75%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
+      <div class="dashboard-tile-heading">
+        Total Bookings
+      </div>
+      <div class="dashboard-tile-sub-heading">{{8450|number}}</div>
+    </div>
   </mat-grid-tile>
 
   <!-- second tile -->
-  <mat-grid-tile class="dashboard-tile dashboard-tile-2 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch" matRipple matTooltip="Rooms available now">
-    <div fxFlex="1125%" fxLayout= "column" fxLayoutAlign="center center" class="h-100">
+  <mat-grid-tile class="dashboard-tile dashboard-tile-2 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch"
+    matRipple matTooltip="Rooms available now">
+    <div fxFlex="1 1 25%" fxLayout="column" fxLayoutAlign="center center" class="h-100">
       <mat-icon>hotel</mat-icon>
     </div>
-    <div fxFlex="1175%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
-    <div class="dashboard-tile-heading">
-   Rooms Available
-  </div >
-  <div class="dashboard-tile-sub-heading">{{174|number}}</div>
-</div>
+    <div fxFlex="1 1 75%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
+      <div class="dashboard-tile-heading">
+        Rooms Available
+      </div>
+      <div class="dashboard-tile-sub-heading">{{174|number}}</div>
+    </div>
   </mat-grid-tile>
 
-<!-- third tile -->
-  <mat-grid-tile class="dashboard-tile dashboard-tile-3 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch" matRipple matTooltip="new customers">
-    <div fxFlex="1125%" fxLayout= "column" fxLayoutAlign="center center" class="h-100">
+  <!-- third tile -->
+  <mat-grid-tile class="dashboard-tile dashboard-tile-3 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch"
+    matRipple matTooltip="new customers">
+    <div fxFlex="1 1 25%" fxLayout="column" fxLayoutAlign="center center" class="h-100">
       <mat-icon>group</mat-icon>
     </div>
-    <div fxFlex="1175%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
-    <div class="dashboard-tile-heading">
-   New Customers
-  </div >
-  <div class="dashboard-tile-sub-heading">{{1252|number}}</div>
-</div>
+    <div fxFlex="1 1 75%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
+      <div class="dashboard-tile-heading">
+        New Customers
+      </div>
+      <div class="dashboard-tile-sub-heading">{{1252|number}}</div>
+    </div>
   </mat-grid-tile>
 
- <!-- fourth tile -->
-  <mat-grid-tile class="dashboard-tile dashboard-tile-4 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch" matRipple matTooltip="Total revenue all time">
-    <div fxFlex="1125%" fxLayout= "column" fxLayoutAlign="center center" class="h-100">
+  <!-- fourth tile -->
+  <mat-grid-tile class="dashboard-tile dashboard-tile-4 colorful-tile" fxLayout="row" fxLayoutAlign="start stretch"
+    matRipple matTooltip="Total revenue all time">
+    <div fxFlex="1 1 25%" fxLayout="column" fxLayoutAlign="center center" class="h-100">
       <mat-icon>attach_money</mat-icon>
     </div>
-    <div fxFlex="1175%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
-    <div class="dashboard-tile-heading">
-   Total revenue
-  </div >
-  <div class="dashboard-tile-sub-heading">{{2810|number}}</div>
-</div>
+    <div fxFlex="1 1 75%" class="h-100" fxLayout="column" fxLayoutAlign="center center">
+      <div class="dashboard-tile-heading">
+        Total revenue
+      </div>
+      <div class="dashboard-tile-sub-heading">{{2810|number}}</div>
+    </div>
   </mat-grid-tile>
 
   <!-- fifth tile -->
